@@ -1,0 +1,12 @@
+@import'variable.scss';
+
+
+@mixin flex ($property, $vertical,$horizontal){
+    display: $property;
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
+@mixin transition($property,$duration) {
+    transition-property: $property;
+    transition-duration: $duration;
+}

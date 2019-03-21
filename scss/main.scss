@@ -1,0 +1,80 @@
+@import './basic/reset.scss';
+@import './basic/font.scss';
+@import './moduls/functions.scss';
+@import './moduls/mixins.scss';
+@import './moduls/private.scss';
+@import './moduls/variable.scss';
+.section1{
+    .br{
+        background-image: url(../img/img-21-06.jpg);
+	    height: 750px;
+	    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+article{
+    img{
+        width: $size-100pr;
+    }
+}
+.work{
+    .container{
+        text-align: center;
+    }
+    .text{
+        max-width: $size-600;
+        margin: 0 auto;
+        
+    }
+}
+.navigation{
+    .navigation-ul{
+        @include flex (flex,center,space-between);
+        margin: $size-50;
+    }
+}
+.backg{
+    background-position: center;
+    background-size: cover;
+}
+.wid{
+    width: $size-100pr;
+    height: $size-400;
+}
+.row-prop{
+    width: $size-100pr;
+    height: $size-200;
+}
+.paddin{    
+    padding-right: $size-0;
+    padding-left: $size-0;
+}
+.marg{
+    margin-right: $size-0;
+    margin-left: $size-0;
+}
+@media only screen and (max-width: 992px){
+    .section3{
+        display: none;
+    }
+}
+.section4{
+    display: none;
+}
+@media only screen and (max-width: 992px){
+    .section4{
+        display: block;
+    }
+}
+.ebout-us{
+    background-color: $black;
+    .br{
+        background-image: url(../img/abstract-art.jpg);
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: $size-100pr;
+    }
+}
